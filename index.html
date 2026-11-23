@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kátia Freitas | Autoliderança Feminina &amp; Estratégia Comportamental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #FAF7F2;
+      --bg-surface: #FFFFFF;
+      --bg-sand: #F2ECE1;
+      --bg-forest: #172B24;
+      --bg-forest-deep: #0F1D18;
+      --bg-wine: #5C2C35;
+      --text-primary: #1E2421;
+      --text-secondary: #4E5853;
+      --text-light: #F8F5EF;
+      --text-light-muted: #D5CFC3;
+      --gold: #C29943;
+      --gold-soft: #E7D4A6;
+      --highlight-marker: rgba(194, 153, 67, 0.22);
+      --border-subtle: #E4DDD0;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 14px;
+      --shadow-soft: 0 10px 28px rgba(23, 43, 36, 0.06);
+      --shadow-card: 0 14px 34px rgba(23, 43, 36, 0.09);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.65;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .top-banner {
+      background-color: var(--bg-forest-deep);
+      color: var(--gold-soft);
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    .top-banner strong { color: #FFFDF9; }
+
+    header {
+      background-color: var(--bg-page);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .brand {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--bg-forest);
+    }
+
+    .brand span {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--bg-wine);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .nav-links a:hover { color: var(--bg-forest); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); opacity: 0.96; }
+    .btn-sm { padding: 10px 18px; font-size: 0.85rem; }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold) 0%, #A67D28 100%);
+      color: #FFFDF9;
+      box-shadow: 0 8px 20px rgba(166, 125, 40, 0.24);
+    }
+
+    .btn-forest {
+      background-color: var(--bg-forest);
+      color: var(--text-light);
+    }
+
+    .btn-outline {
+      border: 1.5px solid var(--bg-forest);
+      color: var(--bg-forest);
+      background: transparent;
+    }
+
+    .hero {
+      padding: 56px 0;
+      background: linear-gradient(180deg, var(--bg-page) 0%, var(--bg-sand) 100%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--bg-wine);
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      line-height: 1.18;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.05rem);
+      color: var(--bg-forest);
+      margin-bottom: 18px;
+    }
+
+    .hero p.lead {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-note {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      border-left: 3px solid var(--gold);
+      padding-left: 12px;
+    }
+
+    .hero-card {
+      background-color: var(--bg-forest);
+      color: var(--text-light);
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(194, 153, 67, 0.35);
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-card .tag {
+      color: var(--gold-soft);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .hero-card h3 { font-size: 1.6rem; color: #FFFDF9; margin-bottom: 14px; }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-light-muted);
+    }
+
+    .hero-card li::before { content: "✦ "; color: var(--gold); margin-right: 6px; }
+
+    section { padding: 68px 0; }
+
+    .section-header {
+      max-width: 720px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      color: var(--bg-forest);
+      margin-bottom: 12px;
+    }
+
+    .section-header p { color: var(--text-secondary); font-size: 1rem; }
+
+    .section-dark {
+      background-color: var(--bg-forest);
+      color: var(--text-light);
+    }
+
+    .section-dark .section-header h2 { color: #FFFDF9; }
+    .section-dark .section-header p { color: var(--text-light-muted); }
+
+    .section-sand {
+      background-color: var(--bg-sand);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    /* Ecossistema com paleta coesa e sóbria */
+    .eco-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .eco-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .eco-card.accent-wine {
+      background-color: var(--bg-wine);
+      border-color: rgba(231, 212, 166, 0.35);
+      color: var(--text-light);
+    }
+
+    .eco-card.accent-wine h3 { color: var(--gold-soft); }
+    .eco-card.accent-wine p { color: var(--text-light-muted); }
+
+    .eco-thumb {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      border: 1px solid var(--border-subtle);
+      background-color: #F6F2EA;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .eco-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .eco-thumb.contain-img img {
+      object-fit: contain;
+      padding: 8px;
+    }
+
+    .eco-thumb.sophia-img img {
+      object-fit: cover;
+      object-position: center 22%;
+    }
+
+    .eco-card h3 { font-size: 1.38rem; margin-bottom: 8px; color: var(--bg-forest); }
+    .eco-card p { font-size: 0.93rem; color: var(--text-secondary); }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .offer-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .offer-card.featured {
+      border: 2px solid var(--gold);
+      box-shadow: var(--shadow-card);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background-color: var(--bg-sand);
+      color: var(--bg-wine);
+      margin-bottom: 14px;
+      width: fit-content;
+    }
+
+    .offer-card.featured .badge {
+      background-color: var(--bg-forest);
+      color: var(--gold-soft);
+    }
+
+    .offer-card h3 { font-size: 1.75rem; color: var(--bg-forest); margin-bottom: 8px; }
+    .offer-sub { font-size: 0.93rem; color: var(--text-secondary); margin-bottom: 22px; }
+
+    .price-box {
+      padding: 18px 0;
+      border-top: 1px dashed var(--border-subtle);
+      border-bottom: 1px dashed var(--border-subtle);
+      margin-bottom: 20px;
+    }
+
+    .price-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      display: block;
+    }
+
+    .price-value {
+      font-family: var(--font-serif);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--bg-forest);
+      line-height: 1.1;
+      margin-top: 4px;
+    }
+
+    .offer-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-bottom: 26px;
+      font-size: 0.93rem;
+    }
+
+    .offer-list li::before { content: "✓ "; color: var(--bg-wine); font-weight: 700; margin-right: 6px; }
+
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(194, 153, 67, 0.45);
+      background: transparent;
+      color: var(--text-light-muted);
+      font-size: 0.86rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background-color: var(--gold);
+      color: var(--bg-forest-deep);
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .t-card {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(194, 153, 67, 0.35);
+    }
+
+    .t-card.hidden { display: none; }
+
+    .t-img-wrap {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 14px;
+      background-color: var(--bg-sand);
+    }
+
+    .t-img-wrap img { width: 100%; height: 310px; object-fit: cover; object-position: top; }
+
+    .t-meta {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--bg-wine);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .t-quote { font-size: 0.92rem; margin-bottom: 12px; }
+
+    .marker {
+      background-color: var(--highlight-marker);
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: 600;
+      color: var(--bg-forest);
+    }
+
+    .t-footer-note {
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 10px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-photo {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 3px solid var(--gold);
+      box-shadow: var(--shadow-card);
+    }
+
+    .about-photo img { width: 100%; height: auto; object-fit: cover; }
+
+    .about-content h2 { font-size: clamp(1.85rem, 3.2vw, 2.4rem); color: var(--bg-forest); margin-bottom: 16px; }
+    .about-content p { margin-bottom: 14px; color: var(--text-secondary); font-size: 0.97rem; }
+
+    .faq-list { max-width: 820px; margin: 0 auto; display: grid; gap: 14px; }
+
+    details {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    summary {
+      font-weight: 600;
+      color: var(--bg-forest);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.98rem;
+    }
+
+    summary::after { content: "+"; font-size: 1.3rem; color: var(--bg-wine); font-weight: 600; }
+    details[open] summary::after { content: "−"; }
+
+    details p {
+      margin-top: 12px;
+      color: var(--text-secondary);
+      font-size: 0.93rem;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    footer {
+      background-color: var(--bg-forest-deep);
+      color: var(--text-light-muted);
+      padding: 36px 0;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    footer strong { color: var(--gold-soft); }
+
+    @media (max-width: 920px) {
+      .hero-grid, .about-grid, .offers-grid, .eco-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <strong>CONDIÇÃO ESPECIAL DE BLACK FRIDAY</strong> — Mentoria em Grupo (Turma Fundadora) &amp; Mentoria Individual com Kátia Freitas
+  </div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#topo" class="brand">
+        Kátia Freitas
+        <span>IKF · Autoliderança &amp; Comportamento</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#ecossistema">Ecossistema</a>
+        <a href="#depoimentos">Relatos</a>
+        <a href="#ofertas">Modalidades</a>
+        <a href="#sobre">A Mentora</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <a href="#ofertas" class="btn btn-gold btn-sm">Escolher Mentoria</a>
+    </div>
+  </header>
+
+  <section id="topo" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Direcionamento Estratégico &amp; Alinhamento Comportamental</span>
+        <h1>O problema nunca foi competência. O que faltava era o direcionamento estratégico e o alinhamento comportamental para você liderar a sua própria carreira e negócios.</h1>
+        <p class="lead">
+          Um espaço firme e acolhedor para mulheres que já entregam muito, mas sentem que precisam parar de se provar no automático e assumir a autoliderança das próprias decisões, rotas e projetos.
+        </p>
+        <div class="hero-actions">
+          <a href="#ofertas" class="btn btn-gold">Ver Opções de Mentoria</a>
+          <a href="#depoimentos" class="btn btn-outline">Ler Relatos Reais</a>
+        </div>
+        <div class="hero-note">
+          Condução personalizada unindo leitura comportamental, clareza estratégica e acompanhamento prático no seu ritmo.
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <span class="tag">O Que Muda na Prática</span>
+        <h3>Do esforço isolado à clareza de rota</h3>
+        <ul>
+          <li>Menos desgaste tentando provar valor em silêncio</li>
+          <li>Leitura objetiva do seu perfil e dos seus padrões</li>
+          <li>Plano de ação e organização concreta no dia a dia</li>
+          <li>Acompanhamento firme, respeitoso e sem fórmulas vazias</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="ecossistema">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Estrutura do Processo</span>
+        <h2>Como o ecossistema sustenta a sua evolução</h2>
+        <p>
+          Clareza sem execução vira apenas teoria; execução sem autoconhecimento vira desgaste. O processo combina diagnóstico comportamental, organização prática e profundidade simbólica.
+        </p>
+      </div>
+
+      <div class="eco-grid">
+        <article class="eco-card">
+          <div class="eco-thumb">
+            <img src="Trello.jpeg" alt="Painel organizado da mentoria no Trello">
+          </div>
+          <h3>Central no Trello</h3>
+          <p>
+            Acompanhamento estruturado por etapas, sessões, mapeamentos e ferramentas, para que cada insight vire passo concreto e visível.
+          </p>
+        </article>
+
+        <article class="eco-card accent-wine">
+          <div class="eco-thumb contain-img">
+            <img src="logo loba.png" alt="Emblema dourado de loba e mulher do Clube do Livro">
+          </div>
+          <h3>Clube do Livro · Mulheres que Correm com os Lobos</h3>
+          <p>
+            Leitura e reflexão aprofundada sobre autonomia, intuição e identidade feminina — com os 6 primeiros contos na Turma em Grupo e acesso completo na Mentoria Individual.
+          </p>
+        </article>
+
+        <article class="eco-card">
+          <div class="eco-thumb sophia-img">
+            <img src="CRM Sophia.jpeg" alt="CRM Sophia Von Decodificador de Leads">
+          </div>
+          <h3>CRM Sophia Von</h3>
+          <p>
+            Organização de rotina e abordagem comercial com intenção e postura — para estruturar conversas, acompanhamentos e oportunidades sem improviso.
+          </p>
+        </article>
+
+        <article class="eco-card">
+          <h3>Mapeamento Comportamental Big Five</h3>
+          <p>
+            Leitura detalhada dos traços de personalidade com devolutiva e micro-ações direcionadas para ajustar postura, comunicação e tomada de decisão.
+          </p>
+        </article>
+
+        <article class="eco-card">
+          <h3>Leitura de Arquétipos</h3>
+          <p>
+            Compreensão das dinâmicas simbólicas e padrões de atuação que influenciam suas escolhas, lideranças e pontos de atenção.
+          </p>
+        </article>
+
+        <article class="eco-card">
+          <h3>Plano de Ação &amp; Acompanhamento</h3>
+          <p>
+            Desdobramento estratégico aplicado à sua realidade atual — seja na carreira corporativa, na transição ou na construção de negócios e consultório.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" style="color: var(--gold-soft);">Quem Já Vivenciou o Processo</span>
+        <h2>Movimentos reais no trabalho, na liderança e no cotidiano</h2>
+        <p>
+          Relatos originais de mulheres que passaram pela mentoria — preservando o tom espontâneo de cada conversa e destacando o que mudou na prática.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">Todos os Relatos</button>
+        <button type="button" class="filter-btn" data-filter="card">Cards Executivos</button>
+        <button type="button" class="filter-btn" data-filter="whatsapp">Conversas no WhatsApp</button>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- 1. Paula (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Paula Card.png" alt="Depoimento de Paula Mostasso">
+            </div>
+            <div class="t-meta">Paula Mostasso · Gente &amp; Gestão</div>
+            <p class="t-quote">
+              <span class="marker">“Saio da mentoria mais consciente do meu valor, mais segura do meu posicionamento.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Profundidade, precisão técnica e direcionamento prático para evoluir na carreira.</div>
+        </article>
+
+        <!-- 2. Valéria (WhatsApp) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Valeria wa.jpeg" alt="Conversa no WhatsApp com Valéria Postiglione">
+            </div>
+            <div class="t-meta">Valéria Postiglione · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“Saí com 2 contatos pra fazermos workshop... Vou ir abastecendo as informações no trello.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Estratégia aplicada em evento que virou conversa, conexão e projeto em andamento.</div>
+        </article>
+
+        <!-- 3. Marta (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Marta Card.png" alt="Depoimento de Marta Barcelos">
+            </div>
+            <div class="t-meta">Marta Barcelos · Gerente Comercial</div>
+            <p class="t-quote">
+              <span class="marker">“Consegui sair da estagnação, retomar projetos que estavam parados, fortaleci minha confiança.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Mais segurança, coragem e alinhamento com o próprio propósito.</div>
+        </article>
+
+        <!-- 4. Neide 1 (WhatsApp) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Neide wa.jpeg" alt="Conversa no WhatsApp com Neide Araújo">
+            </div>
+            <div class="t-meta">Neide Araújo · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“Que tudo que você doou para mim... seja multiplicado...”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Acolhimento e orientação em um momento importante e sensível de transição.</div>
+        </article>
+
+        <!-- 5. Letícia (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Leticia Card.png" alt="Depoimento de Letícia França">
+            </div>
+            <div class="t-meta">Letícia França · Desenvolvedora Mobile</div>
+            <p class="t-quote">
+              <span class="marker">“Estabelecer metas claras e desenvolver uma visão mais estratégica para minha carreira.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Autoconhecimento, organização e visão estratégica no dia a dia.</div>
+        </article>
+
+        <!-- 6. Karine (WhatsApp) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Karine wa.jpeg" alt="Conversa no WhatsApp com Karine Sobral">
+            </div>
+            <div class="t-meta">Karine Sobral · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“Ela fortalece identidade, provoca reflexões poderosas e impulsiona movimentos consistentes.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Transformação consciente, clareza de bagagem e posicionamento estratégico.</div>
+        </article>
+
+        <!-- 7. Júlia (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Julia Card.png" alt="Depoimento de Júlia de Oliveira">
+            </div>
+            <div class="t-meta">Júlia de Oliveira · Analista de Produtos</div>
+            <p class="t-quote">
+              <span class="marker">“Me ajudou a ter mais clareza de qual caminho eu deveria seguir no momento.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Mais clareza para tomar decisões e enxergar oportunidades reais.</div>
+        </article>
+
+        <!-- 8. Flávia (WhatsApp) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Flávia wa.jpeg" alt="Conversa no WhatsApp com Flávia Castro">
+            </div>
+            <div class="t-meta">Flávia Castro · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“Ela conduz todo o processo com firmeza e acolhimento — uma combinação rara.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Mais clareza, autoconfiança e segurança para enfrentar os desafios do empreender.</div>
+        </article>
+
+        <!-- 9. Larissa (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Larissa Card.png" alt="Depoimento de Larissa Souza">
+            </div>
+            <div class="t-meta">Larissa Souza · M&amp;A Senior Associate</div>
+            <p class="t-quote">
+              <span class="marker">“Pensando em projetos de curto e longo prazo e alinhado com meu perfil profissional.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Ferramentas alinhadas ao perfil para planejar o curto e o longo prazo.</div>
+        </article>
+
+        <!-- 10. Elaine (WhatsApp) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Elaine wa.jpeg" alt="Conversa no WhatsApp com Elaine Teixeira">
+            </div>
+            <div class="t-meta">Elaine Teixeira · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“Utilização do roadmap... técnica de perdas e ganhos... plano sólido para alcançar meu objetivo de viver do consultório.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Organização financeira, quebra de paradigmas e plano estruturado para o consultório.</div>
+        </article>
+
+        <!-- 11. Elyzia (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Elyzia Card.png" alt="Depoimento de Elyzia Rodrigues">
+            </div>
+            <div class="t-meta">Elyzia Rodrigues · Arquiteta e Astróloga</div>
+            <p class="t-quote">
+              <span class="marker">“Esclarecendo pontos de forma bastante cirúrgica... clareza para saber onde estou.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Análise objetiva e clareza sobre o momento atual e competências a desenvolver.</div>
+        </article>
+
+        <!-- 12. Neide 2 (WhatsApp - bem distante do primeiro relato da Neide) -->
+        <article class="t-card" data-type="whatsapp">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Neide 2 wa.jpeg" alt="Segunda parte da conversa no WhatsApp com Neide Araújo">
+            </div>
+            <div class="t-meta">Neide Araújo · WhatsApp</div>
+            <p class="t-quote">
+              <span class="marker">“E nunca vou esquecer ‘do movimento intencional’... uma mentora amada... que foi uma cirurgiã.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Precisão nas provocações e impacto que se estende à vida e às relações.</div>
+        </article>
+
+        <!-- 13. Angélica (Card) -->
+        <article class="t-card" data-type="card">
+          <div>
+            <div class="t-img-wrap">
+              <img src="Angelica Card.png" alt="Depoimento de Angélica Modelli">
+            </div>
+            <div class="t-meta">Angélica Modelli · BPO Management Specialist</div>
+            <p class="t-quote">
+              <span class="marker">“Foi nítido o meu desenvolvimento e entendimento sobre mim mesma.”</span>
+            </p>
+          </div>
+          <div class="t-footer-note">Troca profunda e transformação com impacto além do ambiente profissional.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofertas" class="section-sand">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Condição de Black Friday</span>
+        <h2>Escolha o formato ideal para o seu momento</h2>
+        <p>
+          Duas modalidades pensadas com clareza para quem quer sair da sobrecarga e construir direcionamento real com acompanhamento próximo.
+        </p>
+      </div>
+
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div>
+            <span class="badge">Turma Fundadora · Black Friday</span>
+            <h3>Mentoria em Grupo</h3>
+            <p class="offer-sub">
+              Ideal para quem deseja vivenciar o método com troca de experiências, estrutura guiada e devolutiva individual do perfil.
+            </p>
+            <div class="price-box">
+              <span class="price-label">Investimento</span>
+              <div class="price-value">R$ 2.397,00</div>
+            </div>
+            <ul class="offer-list">
+              <li><strong>6 encontros quinzenais</strong> em grupo</li>
+              <li><strong>1 sessão individual exclusiva</strong> de devolutiva do Big Five</li>
+              <li>Acesso aos <strong>6 primeiros contos</strong> do Clube do Livro (<em>Mulheres que Correm com os Lobos</em>)</li>
+              <li>Acesso às ferramentas e organização do processo</li>
+            </ul>
+          </div>
+          <a href="https://pay.hotmart.com/U105256764W?off=chwz0p5j&bid=1795439602221" target="_blank" rel="noopener noreferrer" class="btn btn-forest">
+            Garantir Vaga na Mentoria em Grupo
+          </a>
+        </div>
+
+        <div class="offer-card featured">
+          <div>
+            <span class="badge">Acompanhamento Exclusivo 1:1</span>
+            <h3>Mentoria Individual</h3>
+            <p class="offer-sub">
+              Para quem busca mergulho profundo, foco total na própria história e direcionamento sob medida para decisões estratégicas.
+            </p>
+            <div class="price-box">
+              <span class="price-label">Investimento</span>
+              <div class="price-value">R$ 4.397,97</div>
+            </div>
+            <ul class="offer-list">
+              <li><strong>8 sessões quinzenais</strong> individuais (1 a 1)</li>
+              <li>Acesso completo ao <strong>Clube do Livro</strong> (<em>Mulheres que Correm com os Lobos</em>)</li>
+              <li>Leitura comportamental e direcionamento personalizado</li>
+              <li>Acompanhamento prático e plano de ação sob medida</li>
+            </ul>
+          </div>
+          <a href="https://hotmart.com/pt-br/marketplace/produtos/mentoria-avanca-mulher/U105256764W" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+            Garantir Vaga na Mentoria Individual
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="Foto katia Cinza.jpg" alt="Kátia Freitas — Mentora de Autoliderança Feminina">
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">Quem Conduz o Processo</span>
+        <h2>Kátia Freitas</h2>
+        <p>
+          Por mais de 20 anos, estive à frente de operações complexas e equipes em grande escala no ambiente corporativo, construindo minha base na Economia, nas Finanças Corporativas e na Gestão de Pessoas. Ao longo dessa trajetória, aprendi a ler números, cenários e pessoas — e a perceber que muitas mulheres altamente capazes se desgastam tentando provar competência em vez de construir um direcionamento próprio.
+        </p>
+        <p>
+          Hoje, à frente do <strong>IKF – Instituto Kátia Freitas</strong>, uno o rigor estratégico e analítico da gestão à profundidade do comportamento humano, da neurociência aplicada à comunicação e do olhar junguiano sobre a psique feminina.
+        </p>
+        <p>
+          Meu compromisso é oferecer um espaço firme e acolhedor para que você assuma a autoliderança das suas escolhas, organize sua rota com clareza e transforme intenção em movimento consistente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-sand">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Perguntas Frequentes</span>
+        <h2>Esclarecimentos antes da sua decisão</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>Como funcionam os encontros na Mentoria em Grupo e na Mentoria Individual?</summary>
+          <p>
+            Na Mentoria em Grupo (Turma Fundadora), você participa de 6 encontros quinzenais em grupo e conta com 1 sessão individual de devolutiva do Big Five. Na Mentoria Individual, o acompanhamento acontece em 8 sessões quinzenais exclusivas 1 a 1, com foco integral no seu momento e nas suas metas.
+          </p>
+        </details>
+
+        <details>
+          <summary>A mentoria substitui atendimento de psicologia clínica?</summary>
+          <p>
+            Não. O trabalho é focado em mentoria, autoliderança, desenvolvimento comportamental, estratégia de carreira/negócios e leitura simbólica/arquetípica, sem caráter de psicoterapia clínica ou diagnóstico médico/psicológico.
+          </p>
+        </details>
+
+        <details>
+          <summary>Como funciona o acesso ao Clube do Livro?</summary>
+          <p>
+            Na Mentoria em Grupo, você participa dos 6 primeiros contos de <em>Mulheres que Correm com os Lobos</em>. Na Mentoria Individual, você tem acesso completo ao Clube do Livro.
+          </p>
+        </details>
+
+        <details>
+          <summary>Como ocorre o pagamento e a confirmação da vaga?</summary>
+          <p>
+            A inscrição é feita diretamente pelos links oficiais da Hotmart disponíveis nesta página, conforme a modalidade escolhida. Assim que o pagamento é confirmado, você recebe as orientações para iniciar o seu processo.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>IKF – Instituto Kátia Freitas</strong> · Autoliderança Feminina &amp; Comportamento Humano</p>
+      <p style="margin-top: 6px; font-size: 0.8rem;">Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const testimonialCards = document.querySelectorAll('.t-card');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        testimonialCards.forEach((card) => {
+          const type = card.getAttribute('data-type');
+          if (filter === 'all' || type === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
